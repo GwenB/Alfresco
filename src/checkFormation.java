@@ -37,7 +37,13 @@ public class CheckFormation {
 			if(parenthesisValues.containsValue(stringChar)){
 				// add the opening parenthesis to the stack for testing
 				checkValues.push(stringChar);
-		
+				/**
+				* 
+	 			*    Assuming that a string without parenthesis is correctly formed.
+	 			*    If not, update a previously declared false boolean here and return this
+	 			*    at line 79
+	 			* 
+	 			*/
 				
 			} else if(parenthesisValues.containsKey(stringChar)){ // closing parenthesis found in the string
 				
